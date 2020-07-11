@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta na="viewport" content="width=device-width, initial-scale=1">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <span>Chiko Mutandwa</span>
+        <ul id="menu">
+            <li>
+                <a href="./Home.html">HOME</a>
+            </li>
+            <li>
+                <a href="./About.html">ABOUT</a>
+            </li>
+            <li>
+                <a href="./Contact.html">CONTACT</a>
+            </li>
+            <li>
+                <a href="./Project.html">PROJECTS</a>
+            </li>
+        </ul>
+        <i class="fa fa-bars" onclick="myFunction()"></i>
+    </header>
+
+    <section class="main-container">
+        <form id="contact-form" onsubmit="return validation(this)">
+            <h3>Contact</h3>
+            <!-- ? <form> -->
+            <label>Full Name</label>
+            <div class="inputField">
+                <input id="name" type="text" name="name" placeholder="e.g.Chiko Mutandwa">
+            </div>
+            <label>Email Address</label>
+            <div class="inputField">
+                <input type="text" id="email-address" name="emailaddress" placeholder="e.g.chiko@gmail.com">
+            </div>
+            <label>Mobile Number</label>
+            <div class="inputField">
+                <input type="text" id="mobile-number" name="mobilenumber" placeholder="e.g.0715562459">
+            </div>
+            <label>Country</label>
+            <div class="inputField">
+                <select name="country" id="country">
+                            <option value="" disabled selected>--Select--</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="Botswana">Australia</option>
+                            <option value="United Kigndom">United Kingdom</option>
+                            <option value="United States">United States</option>
+                        </select>
+            </div>
+            <label>Message</label>
+            <div class="inputField">
+                <textarea name="message" id="message" placeholder="Your message"></textarea>
+            </div>
+            <div class="btnSubmit">
+                <input class="btn" onclick="validation()" type="button" value="Submit">
+            </div>
+        </form>
+
+        </div>
+    </section>
+    <footer>
+        Copyright &#169; 2020 <b>Chiko Mutandwa.</b>
+    </footer>
+</body>
+
+</html>
